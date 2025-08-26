@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+
+canvas{
+  display: none;
+}
+
+
+.form-control{
+    margin-top: 10px !important;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  
+  width: 100vw;  
+  background: linear-gradient(-45deg, #667eea, #764ba2, #ff6a00, #ff0084);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(12px);         
+  -webkit-backdrop-filter: blur(12px);   
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: #fff; 
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+h1{
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+.otp-input {
+  width: 30px;
+  height: 48px;            
+  text-align: center;
+  font-size: 1.25rem;      
+  font-weight: 600;          
+  border: 1px solid #9ca3af; 
+  border-radius: 0.5rem;     
+  outline: none;
+  transition: box-shadow 0.2s ease;
+  background: transparent;
+  margin-left: 8px !important;
+  margin-top: 15px !important;
+  color: whitesmoke;
+}
+
+.otp-input:focus {
+  box-shadow: 0 0 0 2px black;
+}
+
+
+
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.load {
+  animation: spin 2s linear infinite;
+}

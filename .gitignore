@@ -1,12 +1,13 @@
-# Node modules (never push)
+# Node modules
 node_modules/
+register/node_modules/
+Backend/node_modules/
 
-# Environment variables (secrets)
+# Environment variables
 .env
+register/.env
+Backend/.env
 
-# Log files
+# Logs
 *.log
 
-# OS-specific
-.DS_Store
-Thumbs.db
